@@ -1,0 +1,155 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  padding: 20px;
+  background: var(--sidebar);
+  color: var(--text);
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar label {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.sidebar select,
+.settings-btn {
+  width: 100%;
+  margin-top: 5px;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+}
+
+/* Chat Area */
+.chat-container {
+  flex: 1;
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  padding: 15px;
+  background: var(--accent);
+  color: var(--text);
+}
+
+.chat-box {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.message {
+  max-width: 60%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.message.ai {
+  background: var(--ai);
+  color: var(--text);
+}
+
+.message.user {
+  background: var(--user);
+  align-self: flex-end;
+}
+
+/* Input */
+.chat-input {
+  display: flex;
+  padding: 10px;
+  background: var(--sidebar);
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.chat-input button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent);
+  color: var(--text);
+}
+
+/* ================= THEMES ================= */
+
+.theme-red-black {
+  --background: #0d0d0d;
+  --sidebar: #1a1a1a;
+  --accent: #ff2e2e;
+  --text: #ffffff;
+  --ai: #2a0000;
+  --user: #ff2e2e;
+}
+
+.theme-yellow-coffee {
+  --background: #f5f0e6;
+  --sidebar: #6f4e37;
+  --accent: #f4c430;
+  --text: #000;
+  --ai: #e6d3b1;
+  --user: #f4c430;
+}
+
+.theme-funky-pink {
+  --background: #1a001a;
+  --sidebar: #ff00aa;
+  --accent: #00ffe5;
+  --text: #fff;
+  --ai: #330033;
+  --user: #ff00aa;
+}
+
+.theme-pinky {
+  --background: #ffe6f0;
+  --sidebar: #ff99cc;
+  --accent: #ff66b2;
+  --text: #000;
+  --ai: #ffd1e8;
+  --user: #ff66b2;
+}
+
+.theme-purple-black {
+  --background: #0e001a;
+  --sidebar: #1c0033;
+  --accent: #9b4dff;
+  --text: #fff;
+  --ai: #2b004d;
+  --user: #9b4dff;
+}
+
+.theme-gold-black {
+  --background: #0b0b0b;
+  --sidebar: #1f1f1f;
+  --accent: #d4af37;
+  --text: #fff;
+  --ai: #332600;
+  --user: #d4af37;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ChatVerse AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-red-black">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>ChatVerse AI</h2>
+
+    <label>Character</label>
+    <select id="characterSelect">
+      <option value="red-black">Dark Warrior</option>
+      <option value="yellow-coffee">Coffee Sage</option>
+      <option value="funky-pink">Funky Bot</option>
+      <option value="pinky">Soft Pink AI</option>
+      <option value="purple-black">Cyber Oracle</option>
+      <option value="gold-black">Golden King</option>
+    </select>
+
+    <label>Theme</label>
+    <select id="themeSelect">
+      <option value="theme-red-black">Red & Black</option>
+      <option value="theme-yellow-coffee">Yellow & Coffee</option>
+      <option value="theme-funky-pink">Funky Pink</option>
+      <option value="theme-pinky">Pinky</option>
+      <option value="theme-purple-black">Purple & Black</option>
+      <option value="theme-gold-black">Gold & Black</option>
+    </select>
+
+    <button class="settings-btn">Settings</button>
+  </aside>
+
+  <!-- Main Chat -->
+  <main class="chat-container">
+    <div class="chat-header">
+      <h3 id="characterName">Dark Warrior</h3>
+    </div>
+
+    <div class="chat-box" id="chatBox">
+      <div class="message ai">Hello! Choose a theme and start chatting ✨</div>
+    </div>
+
+    <div class="chat-input">
+      <input type="text" placeholder="Type your message..." />
+      <button>Send</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
